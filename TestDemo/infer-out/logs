@@ -1,0 +1,49 @@
+[57135][environment] CWD = /Users/chen/Desktop/TestDemo/TestDemo
+[57135][environment] No .inferconfig file found
+[57135][environment] Project root = /Users/chen/Desktop/TestDemo/TestDemo
+[57135][environment] INFER_ARGS =   command line arguments:   infer -- clang -c ViewController.mAnalyzer: checkers
+[57135][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[57135][environment] Infer log identifier is 
+Infer version v0.15.0
+[57135][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[57135][environment] 
+[57135][   progress] Capturing in make/cc mode...
+[57135][      debug] 
+[57135][      debug] *** Beginning capture of file /Users/chen/Desktop/TestDemo/TestDemo/ViewController.m ***
+[57135][      debug] Clang frontend action is translating and linting
+[57135][      debug] Loading the following linters files: /usr/local/Cellar/infer/0.15.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[57135][      debug] Elapsed: 1.507s.
+[57135][      debug] 
+[57135][ extern err] Error: the following clang command did not run successfully:
+[57135][ extern err]     /usr/local/Cellar/infer/0.15.0/lib/infer/facebook-clang-plugins/clang/install/bin/clang
+[57135][ extern err]     @/var/folders/8k/pf6sbvtj611_l7bnqctfq_km0000gn/T/clang_command_.tmp.819c9b.txt
+[57135][ extern err]   ++Contents of '/var/folders/8k/pf6sbvtj611_l7bnqctfq_km0000gn/T/clang_command_.tmp.819c9b.txt':
+[57135][ extern err]     "-cc1" "-load"
+[57135][ extern err]     "/usr/local/Cellar/infer/0.15.0/lib/infer/infer/bin/../../facebook-clang-plugins/libtooling/build/FacebookClangPlugin.dylib"
+[57135][ extern err]     "-add-plugin" "BiniouASTExporter" "-plugin-arg-BiniouASTExporter" "-"
+[57135][ extern err]     "-plugin-arg-BiniouASTExporter" "PREPEND_CURRENT_DIR=1"
+[57135][ extern err]     "-plugin-arg-BiniouASTExporter" "MAX_STRING_SIZE=65535" "-cc1" "-triple"
+[57135][ extern err]     "x86_64-apple-macosx10.14.0" "-Wdeprecated-objc-isa-usage"
+[57135][ extern err]     "-Werror=deprecated-objc-isa-usage" "-emit-obj" "-mrelax-all"
+[57135][ extern err]     "-disable-free" "-disable-llvm-verifier" "-discard-value-names"
+[57135][ extern err]     "-main-file-name" "ViewController.m" "-mrelocation-model" "pic"
+[57135][ extern err]     "-pic-level" "2" "-mthread-model" "posix" "-mdisable-fp-elim"
+[57135][ extern err]     "-masm-verbose" "-munwind-tables" "-target-cpu" "penryn"
+[57135][ extern err]     "-dwarf-column-info" "-debugger-tuning=lldb" "-target-linker-version"
+[57135][ extern err]     "351.8" "-coverage-notes-file"
+[57135][ extern err]     "/Users/chen/Desktop/TestDemo/TestDemo/ViewController.gcno"
+[57135][ extern err]     "-resource-dir"
+[57135][ extern err]     "/usr/local/Cellar/infer/0.15.0/lib/infer/facebook-clang-plugins/clang/install/lib/clang/7.0.0"
+[57135][ extern err]     "-include"
+[57135][ extern err]     "/usr/local/Cellar/infer/0.15.0/lib/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[57135][ extern err]     "-Wno-ignored-optimization-argument" "-Wno-everything"
+[57135][ extern err]     "-fdebug-compilation-dir" "/Users/chen/Desktop/TestDemo/TestDemo"
+[57135][ extern err]     "-ferror-limit" "19" "-fmessage-length" "0" "-stack-protector" "1"
+[57135][ extern err]     "-fblocks" "-fencode-extended-block-signature"
+[57135][ extern err]     "-fobjc-runtime=macosx-10.14.0" "-fobjc-exceptions" "-fexceptions"
+[57135][ extern err]     "-fmax-type-align=16" "-fdiagnostics-show-option" "-o" "ViewController.o"
+[57135][ extern err]     "-x" "objective-c" "ViewController.m" "-O0" "-include"
+[57135][ extern err]     "/usr/local/Cellar/infer/0.15.0/lib/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[57135][ extern err]     "-Wno-everything"
+[57135][ extern err]   
+[57135][ extern err] 
